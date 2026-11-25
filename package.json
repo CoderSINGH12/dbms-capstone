@@ -1,0 +1,19 @@
+{
+  "name": "fcb-laliga-dbms",
+  "version": "1.0.0",
+  "description": "FC Barcelona La Liga Match Analytics & Relational DBMS Platform",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,yellow\" \"npm run server\" \"npm run client\"",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "client:build": "npm --prefix client run build",
+    "server:start": "npm --prefix server start",
+    "test": "npm --prefix server test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "author": "Saksham",
+  "license": "ISC"
+}
